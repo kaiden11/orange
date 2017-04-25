@@ -1,34 +1,200 @@
 <tw-storydata name="Orange" startnode="1" creator="Twine" creator-version="2.1.1" ifid="FFB4655F-16D9-4ABE-9039-D33157B616C6" format="Harlowe" format-version="2.0.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 
-</script><tw-passagedata pid="1" name="First" tags="" position="610,313">You plod to check the console in the game room. The office kiosk was closer, but you want to check [your transfers]&lt;first|. You rub your eyes, still groggy from weeks of sleep. It was quiet, save for the dull thud of his heels on the floor. The ship reminds you of back home in winter. How everything and everyone was crowded together. How after the snow fell everyone walked the same trampled-snow paths. Except there wasn&#x27;t snow, just the sapping cold of the ship&#x27;s hull. The well-paced corridors along the [monoxide beds]&lt;second| and the tiny waking crew living space.
 
-{
-  |first)[{
-	  ===&gt;
-	  //You don&#x27;t understand why they airgapped the office networks and
-	  the external networks. Something about &#x27;security&#x27;.//
-
-  }]
-
-  |second)[{
-	  ===&gt;
-	  //You should see if you can&#x27;t find a better pillow. There&#x27;s a horrible
-	  crick in your neck from this last sleep.//
-
-  }]
+</script><tw-passagedata pid="1" name="First" tags="" position="107,218">{
+    You plod to check the console in the game room. The office kiosk was
+    closer, but you want to check [your transfers]&lt;first|. You rub your
+    eyes, still groggy from weeks of sleep. It was quiet, save for the dull
+    thud of his heels on the floor. The ship reminds you of back home in 
+    winter. How everything and everyone was crowded together. How after the
+    snow fell everyone walked the same trampled-snow paths. Except there
+    wasn&#x27;t snow, just the sapping cold of the ship&#x27;s hull. The well-paced 
+    corridors along the [monoxide beds]&lt;second| and the tiny waking crew 
+    living space.
 }
 
-</tw-passagedata><tw-passagedata pid="2" name="startup1" tags="startup" position="777,324">{
-	(enchant: ?code, (font:&#x27;Courier New&#x27;) )
-	(click:	?first)[ (show: ?first)]
-	(click:	?second)[ (show: ?second)]
-	(click:	?third)[ (show: ?third)]
-	(click:	?fourth)[ (show: ?fourth)]
-	(click:	?fifth)[ (show: ?fifth)]
-	(click:	?sixth)[ (show: ?sixth)]
-	(click:	?seventh)[ (show: ?seventh)]
-	(click:	?eighth)[ (show: ?eighth)]
-	(click:	?nineth)[ (show: ?nineth)]
-}</tw-passagedata></tw-storydata>
+[[Sit down to log in to your shift.]]
+
+{
+    |_first)[{
+
+        ===||=
+
+        //You don&#x27;t understand why they [airgapped]&lt;a| the office networks and
+        the external networks.
+        Something about &#x27;security&#x27;.//
+
+    }]
+
+    |a)[{
+
+        ===||=
+
+        One of the egg-heads from R&amp;D said &#x27;airgapped&#x27; meant that
+        the two networks just weren&#x27;t connected. Why they couldn&#x27;t
+        they just say, &quot;disconnected,&quot; you&#x27;ll probably never know.
+
+    }]    
+
+    |_second)[{
+
+        ===||=
+
+        //You should see if you can&#x27;t find a better pillow.
+        There&#x27;s a horrible crick in your neck from this last sleep.//
+
+    }]
+}
+  
+  
+
+
+
+</tw-passagedata><tw-passagedata pid="2" name="startup1" tags="startup" position="102,100">{
+	(set: $var to true )
+}</tw-passagedata><tw-passagedata pid="3" name="Sit down to log in to your shift." tags="" position="232,217"> There was [nothing in the alarms]&lt;first|, and nothing [bleeding red]&lt;second|.
+ 
+ [[Background the unread items, go over your completed transfers.]]
+ 
+ {
+ 	|first)[{
+		===&gt;
+		System alarms. Sustained, or instantaneous. The neural networks tend to most everything. It&#x27;s the exceptions to the millions of rules already in the sytem that tend to be the problem.
+	}]
+ 
+ 	|second)[{
+		===&gt;
+		Since the beginning of time, that bright, piercing red of the classic computer error message. Your blood pressure rises just to see the color.
+	}] 
+ 
+ 
+ }
+ 
+ </tw-passagedata><tw-passagedata pid="4" name="Background the unread items, go over your completed transfers." tags="" position="364,222">The new sets had trickled in over the last few weeks, miraculously just completing this morning. A few looked potentially interesting. Excited, you jump into a new game from the list, next to an author&#x27;s name you recognize. //A New Start//, it was called. [The game loads]&lt;first|.
+ 
+{
+  |first)[{
+	 You wake up in a field. The air feels heavy and humid, and warm
+	 gusts of wind flatten the tall grass. Standing up and looking
+	 around, you see the utter desolation left behind by the storm,
+	 a hurricane, or a tornado perhaps. Broken buildings, crackling power
+	 lines, the sound of a dozen sirens in the distance. Smoke on the
+	 air. Disaster.
+
+	[[Over the sirens, though, your focus is compelled to a small, angry cry in the grass.]]
+  }]
+}</tw-passagedata><tw-passagedata pid="5" name="header1" tags="header" position="227,99">{
+    &lt;!--
+        Convenience show/hide hook names.
+    --&gt;
+     
+	(click: ?a)[ (show: ?a) ]
+	(click: ?b)[ (show: ?b) ]
+	(click: ?c)[ (show: ?c) ]
+	(click: ?d)[ (show: ?d) ]
+	(click: ?e)[ (show: ?e) ]
+	(click: ?f)[ (show: ?f) ]
+	(click: ?g)[ (show: ?g) ]
+	(click: ?h)[ (show: ?h) ]
+	(click: ?i)[ (show: ?i) ]
+	(click: ?j)[ (show: ?j) ]
+	(click: ?k)[ (show: ?k) ]
+	(click: ?l)[ (show: ?l) ]
+	(click: ?m)[ (show: ?m) ]
+	(click: ?n)[ (show: ?n) ]
+    (click: ?o)[ (show: ?o) ]
+    (click: ?p)[ (show: ?p) ]
+    (click: ?q)[ (show: ?q) ]
+    (click: ?r)[ (show: ?r) ]
+    (click: ?s)[ (show: ?s) ]
+    (click: ?t)[ (show: ?t) ]
+    (click: ?u)[ (show: ?u) ]
+    (click: ?v)[ (show: ?v) ]
+    (click: ?w)[ (show: ?w) ]
+    (click: ?x)[ (show: ?x) ]
+    (click: ?y)[ (show: ?y) ]
+    (click: ?z)[ (show: ?z) ]
+    
+	(click:	?first)[ (show: ?first) ]
+	(click:	?second)[ (show: ?second) ]
+	(click:	?third)[ (show: ?third) ]
+	(click:	?fourth)[ (show: ?fourth) ]
+	(click:	?fifth)[ (show: ?fifth) ]
+	(click:	?sixth)[ (show: ?sixth) ]
+	(click:	?seventh)[ (show: ?seventh) ]
+	(click:	?eighth)[ (show: ?eighth) ]
+	(click:	?nineth)[ (show: ?nineth) ] 
+    
+	(click:	?1st)[ (show: ?1st) ]
+	(click:	?2nd)[ (show: ?2nd) ]
+	(click:	?3rd)[ (show: ?3rd) ]
+	(click:	?4th)[ (show: ?4th) ]
+	(click:	?5th)[ (show: ?5th) ]
+	(click:	?6th)[ (show: ?6th) ]
+	(click:	?7th)[ (show: ?7th) ]
+	(click:	?8th)[ (show: ?8th) ]
+	(click:	?9th)[ (show: ?9th) ]     
+	
+	(set: 
+		$alpha_style to (text-color: &#x27;grey&#x27; ) + (text-style: &#x27;italic&#x27;)
+	)
+    
+
+	(enchant: ?a,       $alpha_style )
+	(enchant: ?b,       $alpha_style )
+	(enchant: ?c,       $alpha_style )
+	(enchant: ?d,       $alpha_style )
+	(enchant: ?e,       $alpha_style )
+	(enchant: ?f,       $alpha_style )
+	(enchant: ?g,       $alpha_style )
+	(enchant: ?h,       $alpha_style )
+	(enchant: ?i,       $alpha_style )
+	(enchant: ?j,       $alpha_style )
+	(enchant: ?k,       $alpha_style )
+	(enchant: ?l,       $alpha_style )
+	(enchant: ?m,       $alpha_style )
+	(enchant: ?n,       $alpha_style )
+    (enchant: ?o,       $alpha_style )
+    (enchant: ?p,       $alpha_style )
+    (enchant: ?q,       $alpha_style )
+    (enchant: ?r,       $alpha_style )
+    (enchant: ?s,       $alpha_style )
+    (enchant: ?t,       $alpha_style )
+    (enchant: ?u,       $alpha_style )
+    (enchant: ?v,       $alpha_style )
+    (enchant: ?w,       $alpha_style )
+    (enchant: ?x,       $alpha_style )
+    (enchant: ?y,       $alpha_style )
+    (enchant: ?z,       $alpha_style )
+	(enchant: ?first,   $alpha_style )
+	(enchant: ?second,  $alpha_style )
+	(enchant: ?third,   $alpha_style )
+	(enchant: ?fourth,  $alpha_style )
+	(enchant: ?fifth,   $alpha_style )
+	(enchant: ?sixth,   $alpha_style )
+	(enchant: ?seventh, $alpha_style )
+	(enchant: ?eighth,  $alpha_style )
+	(enchant: ?nineth,  $alpha_style )
+	(enchant: ?1st,     $alpha_style )
+	(enchant: ?2nd,     $alpha_style )
+	(enchant: ?3rd,     $alpha_style )
+	(enchant: ?4th,     $alpha_style )
+	(enchant: ?5th,     $alpha_style )
+	(enchant: ?6th,     $alpha_style )
+	(enchant: ?7th,     $alpha_style )
+	(enchant: ?8th,     $alpha_style )
+	(enchant: ?9th,     $alpha_style ) 
+
+}</tw-passagedata><tw-passagedata pid="6" name="Over the sirens, though, your focus is compelled to a small, angry cry in the grass." tags="" position="494,221">You walk through the grass to find an infant, appearing to have been abandoned by his parents. He is terrified and screaming at the top of his lungs, but appears no worse for wear. You pick him up. The tiny lungs pause their bellowing for a beat, either out of confusion, or surprise, or simply exhaustion. For an instant, the infant looks into the player&#x27;s eyes. Wide. Scared eyes. The instinctual emotional response is powerful. The infant closes its eyes again and continues his muffled cry into your shoulder.
+
+[[You pause the game.]]
+</tw-passagedata><tw-passagedata pid="7" name="You pause the game." tags="" position="627,225">You sigh in disgust. You were once a fan of the author, so you know that the story was going to be dark. Exploring the frayed edges of human morality and dignity was the author&#x27;s playground.
+
+And if you had to guess, the child was the only survivor, the parents and family gone with the storm, leaving only the player to make the next formative decisions in the child&#x27;s life. If you know anything about the author, you will have to eventually choose between your own life or your new charge. A survival game. Heavy.
+
+[[Too heavy for just waking up.]]</tw-passagedata><tw-passagedata pid="8" name="Too heavy for just waking up." tags="" position="766,224"> You&#x27;re a little disappointed. Usually the author is a little more subtle. This is just over the top. Plucking at the obvious heartstrings.
+ 
+ [[You suspend the process entirely]]. Maybe later, you think. You have enough in-game children already.</tw-passagedata><tw-passagedata pid="9" name="You suspend the process entirely" tags="" position="896,223">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
